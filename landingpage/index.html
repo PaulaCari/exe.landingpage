@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão DIGITAL</title>
+
+  <!--documentação do boostrap é insero o link CSS de todos os estilos do Style.css-->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- <a href="./Conta.html" >Contas</a>   -->
+  <div class="container">
+    <header>
+      <h1>CARTÃO DIGITAL</h1>
+      <hr >
+    </header>
+
+    <section class="imagem">
+      <img src="./carteira.png" alt="carteira">
+    </section>
+
+    <section class="descricao">
+      <p>Lorem, ipsum dolor sit amet consectetur bradipisicing Commodi voluptatem, vero dolore ea nesciunt ex.</p>
+
+      <ul>
+        <li>Pague suas contas</li>
+        <li>Transfiera dinheiro</li>
+        <li>Acompanhe seus gastos em tempo real</li>
+        <li>Simule emprestimo o financiamentos</li>
+      </ul>
+    </section>
+
+    <section class="formulario">
+      <h2>Abra sua conta e ganhe!</h2>
+      <a href="https://www.baccredomatic.com/es-cr/personas/tarjetas/destacadas/gane-premios-clasica/american-express/clasica" target="_blank">premios!</a>
+
+      <!--<form action="">  -->
+        <!--copie o codigo da pag https://www.staticforms.xyz/    /   https://formsubmit.co/-->
+      <form id="form" class="form" action="https://api.staticforms.xyz/submit" method="POST">  
+
+        <input type="text" name="nome" maxlength="14"  placeholder="Digita seu nome" autocomplete="off" required>
+        <input type="email" name="email"  placeholder="Digite seu email" autocomplete="given-name" required >
+    <!--botão do brootrap-->
+        <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Conta  Premium</button>
+
+     <div>
+      <textarea name="mensagem" id="mensag" rows="2"  placeholder="Mensagem:" ></textarea>
+     </div>
+     
+     <input type="hidden" name="accessKey" value= "c8c0f3dc-af50-4f6a-91b0-2822f4ee7f62">
+     <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+    
+    <!--copie o codigo da pag https://formsubmit.co/
+     <input type="hidden" name="_subject" value="Novo contato!"> congiuração para o subject no email troquei New submission por novo contato 
+     <input type="text" name="_honey" style="display: none"> evita  que os email como enviados vai no spam 
+     <input type="hidden" name="_captccha" value="false">     desabilita o captcha depois de enviar o form-->  
+
+      </form>
+    </section>
+
+    <footer>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vel excepturi magni asperiores alias ut.</p>
+    </footer>
+  </div>
+
+  <!--link do broostrap do JS peguei 3  tags de animação-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+    <!--link js externo-->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
